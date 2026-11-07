@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fffaf2;
+    color: #33251c;
+}
+
+header {
+    background: #352016;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #e8b65b;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e8b65b;
+}
+
+.hero {
+    min-height: 440px;
+    background: linear-gradient(#0008, #0008),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400")
+    center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+h2 {
+    text-align: center;
+    color: #59351f;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px #00000012;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.food-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px #00000012;
+}
+
+.food-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 18px;
+}
+
+.food-info h3 {
+    margin-bottom: 10px;
+    color: #59351f;
+}
+
+.food-info p {
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #a66b16;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5c6b6;
+    border-radius: 6px;
+    background: white;
+}
+
+button, .btn {
+    display: inline-block;
+    background: #8b4e25;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover, .btn:hover {
+    background: #633419;
+}
+
+.btn-gold {
+    background: #e8b65b;
+    color: #352016;
+    font-weight: bold;
+}
+
+footer {
+    background: #352016;
+    color: white;
+    text-align: center;
+    padding: 28px;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.message {
+    text-align: center;
+    margin: 15px;
+    color: #8b4e25;
+}
+
+.reservation-item {
+    padding: 18px;
+    border: 1px solid #e3d4c3;
+    border-radius: 8px;
+    margin: 15px 0;
+    background: white;
+}
+
+@media(max-width: 650px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
+@media print {
+    header, footer, .no-print {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+}

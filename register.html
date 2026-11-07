@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Giridhar Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🍽 Giridhar Restaurant</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Create Your Account</h2>
+
+        <form id="registerForm">
+            <input type="text" id="registerName"
+                placeholder="Full Name" required>
+
+            <input type="email" id="registerEmail"
+                placeholder="Email Address" required>
+
+            <input type="password" id="registerPassword"
+                placeholder="Create Password"
+                minlength="6" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="registerMessage" class="message"></p>
+
+        <p>Already have an account?
+            <a href="login.html">Login Here</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

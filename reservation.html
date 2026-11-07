@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Table - Giridhar Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a class="logo" href="index.html">🍽 Giridhar Restaurant</a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="mybooking.html">My Bookings</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>Reserve Your Table</h2>
+
+        <form id="reservationForm">
+
+            <input type="text" id="customerName"
+                placeholder="Full Name" required>
+
+            <input type="email" id="customerEmail"
+                placeholder="Email Address" required>
+
+            <input type="tel" id="customerPhone"
+                placeholder="Mobile Number"
+                pattern="[0-9]{10}" required>
+
+            <label>Reservation Date</label>
+            <input type="date" id="reservationDate" required>
+
+            <label>Reservation Time</label>
+            <select id="reservationTime" required>
+                <option value="">Select Time</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>01:00 PM</option>
+                <option>02:00 PM</option>
+                <option>06:00 PM</option>
+                <option>07:00 PM</option>
+                <option>08:00 PM</option>
+                <option>09:00 PM</option>
+            </select>
+
+            <label>Number of Guests</label>
+            <select id="guests" required>
+                <option value="">Select Guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="5">5 Persons</option>
+                <option value="6">6 Persons</option>
+                <option value="8">8 Persons</option>
+            </select>
+
+            <label>Choose Table</label>
+            <select id="tableType" required>
+                <option value="">Select Table</option>
+                <option>Family Table</option>
+                <option>Couple Table</option>
+                <option>Window Table</option>
+                <option>Regular Table</option>
+            </select>
+
+            <textarea id="specialRequest"
+                placeholder="Special Requests (Optional)"
+                rows="4"></textarea>
+
+            <button type="submit">Confirm Reservation</button>
+
+        </form>
+
+        <p id="reservationMessage" class="message"></p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Giridhar Restaurant</p>
+</footer>
+
+</body>
+</html>
